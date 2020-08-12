@@ -1,0 +1,100 @@
+.AllContainer{
+    width: 60%;
+    margin: auto;
+    height: 100%;
+}
+
+@media only screen and (max-width: 900px){
+    .AllContainer{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .AllContainer{
+        width: 100%;
+    }
+}
+
+.Title{
+    margin-bottom: 5%;
+    margin-top: 5%;
+    padding-top: 0.5px;
+    padding-bottom: 0.5px;
+    border-bottom: 1px solid black;
+    
+}
+
+.product-form{
+    width: 90%;
+}
+
+@media only screen and (max-width: 900px){
+    .product-form{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .product-form{
+        width: 100%;
+    }
+}
+
+.General{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5%;
+}
+
+.container{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.labels{
+    padding: 2%;
+    font-size: larger;
+    width: 25%;
+}
+
+::placeholder{
+    color: black;
+}
+
+.inputs{
+    width: 64%;
+    padding: 2%;
+    font-size: larger;
+}
+
+.sign-box{
+    background-color: white;
+    border: 0;
+}
+
+.sign{
+    width: 100%;
+    color: rgb(0,140,149);
+    font-size: 2.2em;
+    cursor: pointer;
+    padding-top: 1%;
+}
+
+
+.submit-btn{
+    margin: auto;
+    background-color: rgb(0,140,149);
+}
+
+.submit{
+    width: 100%;
+    line-height: 3em;
+    background-color: rgb(0,140,149);
+    border: 0;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+}
