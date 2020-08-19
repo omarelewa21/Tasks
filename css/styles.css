@@ -4,23 +4,10 @@
     height: 100%;
 }
 
-@media only screen and (max-width: 900px){
-    .AllContainer{
-        width: 80%;
-    }
-}
-
-@media only screen and (max-width: 400px){
-    .AllContainer{
-        width: 100%;
-    }
-}
-
 .Title{
-    margin-bottom: 5%;
-    margin-top: 5%;
+    width: 90%;
+    margin-bottom: 2%;
     padding-top: 0.5px;
-    padding-bottom: 0.5px;
     border-bottom: 1px solid black;
     
 }
@@ -29,22 +16,10 @@
     width: 90%;
 }
 
-@media only screen and (max-width: 900px){
-    .product-form{
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 400px){
-    .product-form{
-        width: 100%;
-    }
-}
-
-.General{
+.General, .General2{
     display: flex;
     justify-content: space-around;
-    margin-bottom: 5%;
+    margin-bottom:  0.5%;
 }
 
 .container{
@@ -54,9 +29,14 @@
 }
 
 .labels{
-    padding: 2%;
     font-size: larger;
+    font-weight: bold;
     width: 25%;
+    line-height: 5px;
+    border: 0;
+}
+.labels:focus{
+    outline: none;
 }
 
 ::placeholder{
@@ -65,8 +45,9 @@
 
 .inputs{
     width: 64%;
+    font-size: large;
+    font-weight: bold;
     padding: 2%;
-    font-size: larger;
 }
 
 .sign-box{
@@ -74,7 +55,7 @@
     border: 0;
 }
 
-.sign{
+.sign {
     width: 100%;
     color: rgb(0,140,149);
     font-size: 2.2em;
@@ -82,9 +63,23 @@
     padding-top: 1%;
 }
 
+.General .sign{
+    visibility: hidden;
+}
+
+button:focus, button:active, button:default {
+    outline: none;
+}
+
+select option {
+    margin: 40px;
+    
+}
 
 .submit-btn{
+    width: 50%;
     margin: auto;
+    margin-top: 2%;
     background-color: rgb(0,140,149);
 }
 
@@ -97,4 +92,43 @@
     font-size: large;
     font-weight: bold;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 1100px){
+    .AllContainer{
+        width: 80%;
+    }
+    .Title, .product-form, .container{
+        width: 100%;
+    }
+    .labels, .inputs{
+        font-size: medium;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .AllContainer{
+        width: 100%;
+    }
+    .Title, .product-form, .container{
+        width: 100%;
+    }
+    .labels, .inputs{
+        font-size: xx-small;
+    }
+    .Title-name{
+        font-size: 1.5em;
+    }
+    .sign{
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .labels, .inputs{
+        font-size: 10px;
+    }
+    .sign{
+        font-size: 1em;
+    }
 }

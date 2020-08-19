@@ -16,26 +16,54 @@
         <section class="form-sec">
             <form class="product-form" method="GET" action="collect.php">
                 <div class="big-container">
+                    <?php
+                    $labels = array("Product Name", "Part Number", "Manufacturer", "Series Number", "label 5", "label 6", "label 7");
+                    for($x = 0; $x < 7; $x++){
+                    echo '
+
                     <div class="General">
                     
-                    <button class="sign-box minus" type="button" onclick="remove(this)">
-                    <i class="fas fa-minus-circle minus sign"></i>
+                    <button class="sign-box minus" type="button">
+                        <i class="fas fa-minus-circle minus sign"></i>
                     </button>
                     
                     <div class="container">
-                        <input class="labels" type="text" name="label-name" placeholder="Field Name">
+                        <input class="labels" type="text" name="label-name" placeholder="' . $labels[$x] . '" readonly>
                         <input class="inputs" type="text" name="input-name" placeholder="Value">
                     </div>
                     
-                    <button class="sign-box positive" type="button" onclick="Clone(this)"><i class="fas fa-plus-circle plus sign"></i></button>
+                    <button class="sign-box positive" type="button">
+                        <i class="fas fa-plus-circle plus sign"></i>
+                    </button>
                     
+                    </div>' ;}?>
+
                     
-                </div>
-                </div>
                 
-                <div class="submit-btn">
-                    <button class="submit" type="Submit">Insert Product</button>
+                    <div class="General2">
+                        <button class="sign-box minus" type="button" onclick="remove(this)">
+                            <i class="fas fa-minus-circle minus sign"></i>
+                        </button>
+                           
+                        <div class="container">
+                            <select name="cars" class="labels">
+                              <option class="option" value="volvo">option 1</option>
+                              <option class="option" value="saab">option 2</option>
+                              <option class="option" value="mercedes">option 3</option>
+                              <option class="option" value="audi">option 4</option>
+                            </select>
+                            
+                            <input class="inputs" type="text" name="input-name" placeholder="Value">
+                        </div>
+                    
+                        <button class="sign-box positive" type="button" onclick="Clone(this)">
+                            <i class="fas fa-plus-circle plus sign"></i>
+                        </button>
+                    </div>
                 </div>
+                    <div class="submit-btn">
+                        <button class="submit" type="Submit">Save Product</button>
+                    </div>
                 
                 
             </form>
