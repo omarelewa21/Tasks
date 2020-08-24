@@ -17,7 +17,7 @@
             <form class="product-form" method="GET" action="collect.php">
                 <div class="big-container">
                     <?php
-                    $labels = array("Product Name", "Part Number", "Manufacturer", "Series Number", "label 5", "label 6", "label 7");
+                    $labels = array("Product Name", "Part Number", "Manufacturer", "Series Number", "Section", "Category", "Type");
                     for($x = 0; $x < 7; $x++){
                     echo '
 

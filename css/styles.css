@@ -7,7 +7,6 @@
 .Title{
     width: 90%;
     margin-bottom: 2%;
-    padding-top: 0.5px;
     border-bottom: 1px solid black;
     
 }
@@ -29,7 +28,7 @@
 }
 
 .labels{
-    font-size: larger;
+    font-size: medium;
     font-weight: bold;
     width: 25%;
     line-height: 5px;
@@ -45,9 +44,9 @@
 
 .inputs{
     width: 64%;
-    font-size: large;
+    font-size: medium;
     font-weight: bold;
-    padding: 2%;
+    padding: 1%;
 }
 
 .sign-box{
@@ -58,7 +57,7 @@
 .sign {
     width: 100%;
     color: rgb(0,140,149);
-    font-size: 2.2em;
+    font-size: 1.7em;
     cursor: pointer;
     padding-top: 1%;
 }
@@ -126,7 +125,7 @@ select option {
 
 @media only screen and (max-width: 500px){
     .labels, .inputs{
-        font-size: 10px;
+        font-size: 9px;
     }
     .sign{
         font-size: 1em;
